@@ -275,6 +275,12 @@ input[type="submit"] {
   line-height: 1;
 }
 
+/* gform */
+.gform {
+  /* height: 1000px; */
+  margin: 0;
+}
+
 /* フッター
 ------------------------------- */
 footer {
@@ -359,5 +365,16 @@ footer p {
   }
   .big-box img {
     height: 100%;
+  }
+  /* CONTACT */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+
+  /* フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
   }
 }

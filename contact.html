@@ -8,6 +8,14 @@
       content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta prorperty="og:url" content="http://example.com/index.html" />
+    <meta prorperty="og:type" content="website" />
+    <meta prorperty="og:title" content="WCB Cafe Home" />
+    <meta
+      prorperty="og:description"
+      content="おしゃれなカフェで癒されてみませんか？無添加の食材で体の中からリフレッシュ。"
+    />
+    <meta prorperty="og:image" content="http://example.com/images/ogp.jpg" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -47,25 +55,19 @@
         </form>
         <form name="contact" method="POST" netlify>
           <p>
-            <label>Your Name: <input type="text" name="name" /></label>
+            <label for="name">お名前</label>
+            <input type="text" name="name" />
           </p>
           <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" />
           </p>
           <p>
-            <label
-              >Your Role:
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label
-            >
+            <label for="message">メッセージ</label>
+            <textarea name="message"></textarea>
           </p>
           <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
+            <input type="submit" class="button" value="送信" />
           </p>
         </form>
         <div>
@@ -85,6 +87,79 @@
       <!-- /.wrapper -->
     </div>
     <!-- /#contact -->
+    <section id="location">
+      <div class="wrapper">
+        <div class="location-info">
+          <h3 class="sub-title">カフェ東駅前店</h3>
+          <p>
+            住所：東京都中央区<br />
+            　　　　　　1-1-1<br />
+            電話：0120-123-456<br />
+            営業時間：10:00 〜 17:30 休日：水曜<br />
+            休日：水曜日<br />
+          </p>
+        </div>
+        <!-- /.location-map -->
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7231386752205!2d139.77153525073672!3d35.683818580096435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018895611cdefa9%3A0x8cfc20668f0e81d2!2z44CSMTAzLTAwMjcg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1605837551408!5m2!1sja!2sjp"
+            width="800"
+            height="400"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+      <!-- /.wrapper -->
+    </section>
+    <!-- /#location -->
+    <section id="sns">
+      <div class="wrapper">
+        <div class="sns-box">
+          <h3 class="sub-title">Facebook</h3>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fningenryokunabi%2F&tabs=timeline&width=340&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1797429460578391"
+            width="340"
+            height="315"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+        <div class="sns-box">
+          <h3 class="sub-title">Twitter</h3>
+          <a
+            class="twitter-timeline"
+            data-height="315"
+            href="https://twitter.com/chichi_words?ref_src=twsrc%5Etfw"
+            >Tweets by chichi_words</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+        <div class="sns-box">
+          <h3 class="sub-title">YouTube</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k1oPVp63eNk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <!-- /.wrapper -->
+    </section>
+    <!-- /#sns -->
     <footer>
       <div class="wrapper">
         <p><small>&copy; 2019 Monabox</small></p>
